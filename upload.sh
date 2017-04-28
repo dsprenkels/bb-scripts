@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/usr/bin/env bash
 
 # Blackboard 9.1 upload-grades-csv script
 

@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/usr/bin/env bash
 
 # repareer alle creatieve dingen die mensen opsturen
 # - unzipped alle zips en rars (zonder dirs)

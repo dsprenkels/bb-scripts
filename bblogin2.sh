@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/usr/bin/env bash
 
 # (c) 2007 Marc Schoolderman
 # Met veel dank aan Ruben Nijveld en Marlon Baeten voor hun

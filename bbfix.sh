@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 
 # converteert een blackboard zip naar een directory structuur (bb 9.1)
 

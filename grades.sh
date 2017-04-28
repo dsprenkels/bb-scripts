@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 
 if [ -z "$*" ]; then
 	echo "Usage: grades.sh s[0-9]*/s[0-9]*.txt" >& 2

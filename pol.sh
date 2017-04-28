@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 
 # pol maakt het geven van uitgebreide feedback aan meerdere
 # mensen gemakkelijker (maar kijk niet hoe)

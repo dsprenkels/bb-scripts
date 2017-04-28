@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 
 USERLIST="${0%/*}/userlist"
 

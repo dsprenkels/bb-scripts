@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/usr/bin/env bash
 
 # verdeel alle s* directories in gelijke delen over de argumenten
 # als de argumenten al bestaan en mapjes bevatten, kopieert het de inhoud

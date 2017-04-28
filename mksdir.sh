@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/usr/bin/env bash
 
 # create a emulated s123456 directory + fake response file
 # use if someone who submitted manually :(

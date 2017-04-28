@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 
 # convert a flat directory into a jar file
 
