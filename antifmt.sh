@@ -37,7 +37,7 @@ for gz in ${STUDDIRS}/*.gz ${STUDDIRS}/*.tgz; do [ -e "$gz" ] && gunzip -qf "$gz
 for bz in ${STUDDIRS}/*.bz2; do [ -e "$bz" ] && bunzip2 -qf "$bz"; done
 for xz in ${STUDDIRS}/*.xz; do [ -e "$xz" ] && unxz -qf "$xz"; done
 for tar in ${STUDDIRS}/*.tar; do
-	[ "$tar" != "${STUDDIRS}/*.tar" ] && tar xCfv "${tar%/*}" "${tar}" --xform 's!.*/!!' > "${tar}.contents"
+	[ "$tar" != "${STUDDIRS}/*.tar" ] && tar xCfv "${tar%/*}" "${tar}" > "${tar}.contents"
 done
 
 # correct msdos/mac line endings
