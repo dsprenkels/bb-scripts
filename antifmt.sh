@@ -26,12 +26,7 @@ unpack[application/x-rar]=de.rar
 echo UnZIP\(`ls ${STUDDIRS}/*.zip 2> /dev/null | wc -l`\)/UnRAR\(`ls ${STUDDIRS}/*.rar 2> /dev/null | wc -l`\)/Un7Z\(`ls ${STUDDIRS}/*.7z 2> /dev/null | wc -l`\)/UnTAR\(`ls ${STUDDIRS}/*.tar* ${STUDDIRS}/*.tgz 2> /dev/null | wc -l`\) nested files
 for zip in ${STUDDIRS}/*.zip ${STUDDIRS}/*.rar ${STUDDIRS}/*.7z; do
 	if [ ! -e "$zip" ]; then continue; fi
-	#7z e -y -o"${zip%/*}" "$zip" > "${zip}.contents"
-	decrunch="${unpack["`file --brief --mime-type "$zip"`"]}"
-	if [ "${zip##*.}" != "${decrunch##*.}" ]; then
-		echo "$zip" is not a "${zip##*.}" file"${decrunch:+, detected ${decrunch##*.}}"
-	fi
-	[ "$decrunch" ] && $decrunch "${zip}" > "${zip}".contents
+	7z e -y -o"${zip%/*}" "$zip" > "${zip}.contents"
 done
 for gz in ${STUDDIRS}/*.gz ${STUDDIRS}/*.tgz; do [ -e "$gz" ] && gunzip -qf "$gz"; done
 for bz in ${STUDDIRS}/*.bz2; do [ -e "$bz" ] && bunzip2 -qf "$bz"; done
